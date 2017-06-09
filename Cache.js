@@ -25,7 +25,7 @@ class Cache {
   set (key, value, expiresIn = this.config.expiresIn, callback = () => {}) {
     value = JSON.stringify(value);
 
-    cacheClient.set(key, value, 'PX', expiresIn, (error) => {
+    this.cacheClient.set(key, value, 'PX', expiresIn, (error) => {
       if (error) {
         throw error;
       }
@@ -42,7 +42,7 @@ class Cache {
    */
   get (key, callback) {
 
-    cacheClient.get(key, (error, value) => {
+    this.cacheClient.get(key, (error, value) => {
       try {
         value = JSON.parse(value);
       } catch (error) {}
