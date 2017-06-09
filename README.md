@@ -12,7 +12,8 @@ Install via npm:
 
     const Cache = require('hapi-init-redis');
     const cache = new Cache({
-      redisUrl:
+      redisUrl: 'redis://127.0.0.1:6379',
+      expiresIn: 1000 * 60 * 60
     });
 
     // Setting an object in cache

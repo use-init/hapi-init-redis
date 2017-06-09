@@ -3,7 +3,7 @@
  */
 const client = require('redis');
 
-class Cache () {
+class Cache {
 
   /**
    * Set up general cache
