@@ -1,6 +1,6 @@
 {
   "name": "hapi-init-redis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hapi Caching Interface with redis",
   "main": "Cache.js",
   "author": "Hans Christian Reinl <info@drublic.de>",
